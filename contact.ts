@@ -5,7 +5,7 @@ export const contacts = {
     address_1_url:"",
     address_1_mapUrl:"",
     socialContacts: {
-        facebook: "https://www.facebook.com",
+        facebook: "https://www.facebook.com/people/YUZI-SUSHI/61579248478732/",
         instagram: "https://www.instagram.com/yuzicheesysushi/",
         linkedin: "https://www.linkedin.com",
         twitter: "https://twitter.com",

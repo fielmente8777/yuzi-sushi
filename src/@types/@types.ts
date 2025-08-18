@@ -24,7 +24,10 @@ export interface AboutUsPropsType {
 
 export interface OrderNowPropsType {
   title: string;
-  images: string[];
+  images: {
+    href: string;
+    src: string;
+  }[];
 }
 
 export interface OurServicesPropsType {
@@ -51,13 +54,11 @@ export interface TestimonialsPropsType {
   }[];
 }
 
-
-
 export interface AddsTypes {
   title: string;
   description: string;
   links: {
     label: string;
     href: string;
-  }[],
+  }[];
 }

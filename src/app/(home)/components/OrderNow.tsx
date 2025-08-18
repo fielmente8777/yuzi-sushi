@@ -1,6 +1,7 @@
 import { OrderNowPropsType } from "@/@types/@types";
 import { SectionWithContainer } from "@/components";
 import Image from "next/image";
+import Link from "next/link";
 
 const OrderNow: React.FC<OrderNowPropsType> = ({ title, images }) => {
   return (
@@ -20,20 +21,21 @@ const OrderNow: React.FC<OrderNowPropsType> = ({ title, images }) => {
       </div>
       <div className="md:grid hidden grid-cols-3 bg-white gap-4 max-w-[1033px] mx-auto w-full box-shadow_2 py-12 rounded-br-[40px] divide-x-2 divide-tertiary">
         {images.map((image, index) => (
-          <div key={index} className="relative w-full aspect-[4/.55]">
-            <Image src={image} alt={title} fill className="contain px-16" />
-          </div>
+          <Link
+            href={image.href}
+            key={index}
+            className="relative w-full aspect-[4/.55]"
+          >
+            <Image src={image.src} alt={title} fill className="contain px-16" />
+          </Link>
         ))}
       </div>
       <div className="md:hidden flex flex-col gap-4">
         {images.map((image, index) => (
-          <div
-            key={index}
-            className=" box-shadow_2 p-[2rem] rounded-br-[40px]"
-          >
-            <div className="relative w-full aspect-[4/.8]">
-              <Image src={image} alt={title} fill className="contain" />
-            </div>
+          <div key={index} className=" box-shadow_2 p-[2rem] rounded-br-[40px]">
+            <Link href={image.href} className="relative w-full aspect-[4/.8]">
+              <Image src={image.src} alt={title} fill className="contain" />
+            </Link>
           </div>
         ))}
       </div>

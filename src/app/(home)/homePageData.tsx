@@ -29,7 +29,20 @@ export const homePageData = {
   },
   orderNow: {
     title: "Order Now",
-    images: ["/im14.png", "/im2.png", "/im12.png"],
+    images: [
+      {
+        href:"",
+        src:"/im14.png",
+      },
+      {
+        href:"",
+        src:"/im2.png",
+      },
+      {
+        href:"",
+        src:"/im12.png",
+      },
+    ],
   },
   ourServices: {
     title: "Fresh to Perfect — Sushi by the Best",
