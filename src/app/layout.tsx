@@ -5,6 +5,7 @@ import "./styles.scss";
 import { AppProvider } from "@/contextApi/AppContext";
 import { Footer } from "@/components";
 import Navbar from "@/components/navbar/Navbar";
+import PopupForm from "@/components/pop-ups/PopupForm";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <PopupForm />
         </AppProvider>
       </body>
     </html>

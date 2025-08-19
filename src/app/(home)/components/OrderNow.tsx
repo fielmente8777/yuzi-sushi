@@ -24,6 +24,7 @@ const OrderNow: React.FC<OrderNowPropsType> = ({ title, images }) => {
           <Link
             href={image.href}
             key={index}
+            target="_blank"
             className="relative w-full aspect-[4/.55]"
           >
             <Image src={image.src} alt={title} fill className="contain px-16" />
@@ -33,7 +34,7 @@ const OrderNow: React.FC<OrderNowPropsType> = ({ title, images }) => {
       <div className="md:hidden flex flex-col gap-4">
         {images.map((image, index) => (
           <div key={index} className=" box-shadow_2 p-[2rem] rounded-br-[40px]">
-            <Link href={image.href} className="relative w-full aspect-[4/.8]">
+            <Link href={image.href} target="_blank" className="relative w-full aspect-[4/.8]">
               <Image src={image.src} alt={title} fill className="contain" />
             </Link>
           </div>

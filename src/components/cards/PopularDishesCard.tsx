@@ -16,7 +16,7 @@ const PopularDishesCard: React.FC<PopularDishesPropsType["cards"][0]> = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </figure>
-      <figcaption className="text-center text-2xl text-primary">{title}</figcaption>
+      <figcaption className="text-center text-2xl font-fr text-primary">{title}</figcaption>
     </div>
   );
 };

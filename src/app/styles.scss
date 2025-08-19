@@ -1,15 +1,6 @@
 // font sizes
 
 @layer utilities {
-    .demo {
-        .swiper {
-            pointer-events: none;
-        }
-        .swiper-wrapper {
-            transition-timing-function: linear !important;
-        }
-    }
-
     .box-shadow {
         box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
     }
@@ -97,17 +88,31 @@
     }
 }
 
-.pagination_1 {
+.pagination {
+    
     .swiper-pagination-bullet {
-        width: 13px;
-        height: 13px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
-        background-color: transparent;
-        border: 1px solid #000000;
+        background-color: #e266334d;
         opacity: 1;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 1px solid #1f1f1f;
+            transition: opacity 0.3s ease;
+        }
     }
     .swiper-pagination-bullet-active {
-        background-color: #454444;
+        background-color: #e26633;
     }
 }
 

@@ -7,7 +7,7 @@ const TestimonialCard: React.FC<TestimonialsPropsType["cards"][0]> = ({
   title,
 }) => {
   return (
-    <div className="w-full flex max-sm:flex-col justify-center md:px-16 md:py-14 max-md:pt-7 max-md:pb-12 card_class">
+    <div className="w-full flex max-sm:flex-col justify-center md:px-16 md:py-14 max-md:pt-7 max-md:pb-12 ">
       <div className="md:max-w-sm w-full px-6">
         <div className="relative w-full md:aspect-[4/3] aspect-[4/3]">
           <Image
@@ -31,7 +31,7 @@ const TestimonialCard: React.FC<TestimonialsPropsType["cards"][0]> = ({
           ))}
         </ul>
         <p className="text-lg text-light">{description}</p>
-        <h3 className="text-xl font-fr text-secondary">{title}</h3>
+        {/* <h3 className="text-xl font-fr text-secondary">{title}</h3> */}
       </div>
     </div>
   );

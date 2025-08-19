@@ -1,9 +1,13 @@
+"use client";
 import { AddsTypes } from "@/@types/@types";
 import { Container, Headings, Section } from "@/components";
+import { AppContext } from "@/contextApi/AppContext";
 import { ArrowBtn, OutLineCallCircleIcon } from "@/utils/icons";
 import Link from "next/link";
+import { useContext } from "react";
 
 const Adds: React.FC<AddsTypes> = ({ title, description, links }) => {
+  const { setIsOpenPopupForm } = useContext(AppContext);
   return (
     <Section>
       <Section
@@ -32,13 +36,12 @@ const Adds: React.FC<AddsTypes> = ({ title, description, links }) => {
                 {description}
               </p>
               <div className="">
-                <Link
-                  href={links[1].href}
-                  target="_blank"
+                <button
+                  onClick={() => setIsOpenPopupForm(true)}
                   className="bg-secondary py-3 text-nowrap px-6 flex items-center gap-2 text-lg text-white w-fit border border-secondary hover:bg-white hover:text-secondary shadow-inner rounded-full"
                 >
                   {links[1].label} <ArrowBtn />
-                </Link>
+                </button>
               </div>
             </div>
           </Container>

@@ -10,7 +10,7 @@ const Form = () => {
   const [userEmail, setUserEmail] = useState("");
   const [userPhone, setUserPhone] = useState("");
   const [userMessage, setUserMessage] = useState("");
-  const [countryCode, setCountryCode] = useState("+91"); // Default country code
+  const [countryCode, setCountryCode] = useState("+44"); // Default country code
   const [formRes, setFormRes] = useState(false);
   const [emailErrorMessage, setEmailErrorMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -154,7 +154,7 @@ const Form = () => {
       className={`flex flex-col gap-6 box-shadow_2 bg-white p-6 form`}
     >
       <h2 className="text-secondary font-fr x_lg_font_s text-center">Get in Touch</h2>
-      <p className="text-lg text-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <p className="text-lg text-light text-center">Fill out the form below to place your bulk order enquiry.</p>
       <div className="flex gap-4 flex-col ">
         {formData.map((data, index) => (
           <div

@@ -12,7 +12,7 @@ const OurServicesCard: React.FC<OurServicesPropsType["cards"][0]> = ({
       </span>
       <div className="">
         <h3 className="text-2xl font-fr text-center">{title}</h3>
-        <p className="text-center text-lg">{description}</p>
+        <p className="text-center text-light text-lg">{description}</p>
       </div>
     </div>
   );

@@ -187,7 +187,7 @@ export const countries: data_Type[] = [
   { name: "UGA", code: "+256" },
   { name: "UKR", code: "+380" },
   { name: "ARE", code: "+971" },
-  { name: "GBR", code: "+44" },
+  { name: "UK", code: "+44" },
   { name: "USA", code: "+1" },
   { name: "URY", code: "+598" },
   { name: "UZB", code: "+998" },

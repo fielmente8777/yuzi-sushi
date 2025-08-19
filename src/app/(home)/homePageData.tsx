@@ -31,16 +31,16 @@ export const homePageData = {
     title: "Order Now",
     images: [
       {
-        href:"",
-        src:"/im14.png",
+        href: "https://www.ubereats.com/gb/store/yuzi-cheesy-sushi-%26-grill/EQp72mV8VyyZ1AOAMrbQlw?srsltid=AfmBOoqsXipGFVokFJLX_NBdLDLTLZY-L9_bKtuvHKt-E68ubVC1t7tY",
+        src: "/im14.png",
       },
       {
-        href:"",
-        src:"/im2.png",
+        href: "https://deliveroo.co.uk/menu/london/kentish-town/cheesy-sushi-jml-east-side-regis-road?srsltid=AfmBOoq7I59U31JGh8t4QFzV6XeXUbbxFGltysDWuAlQv0f0caQEnBNp",
+        src: "/im2.png",
       },
       {
-        href:"",
-        src:"/im12.png",
+        href: "https://www.just-eat.co.uk/restaurants-yuzi-cheesy-sushi-and-grill-kentish-town/menu",
+        src: "/im12.png",
       },
     ],
   },
@@ -72,9 +72,10 @@ export const homePageData = {
       },
     ],
   },
-  adds:{
+  adds: {
     title: "Get in touch for bulk food orders.",
-    description: "From lunch to weekend treats, enjoy sushi that feels like home. Order now or contact us for bulk orders.",
+    description:
+      "From lunch to weekend treats, enjoy sushi that feels like home. Order now or contact us for bulk orders.",
     links: [
       {
         label: "07775211046",
@@ -138,9 +139,31 @@ export const homePageData = {
   testimonials: {
     cards: [
       {
-        title: "Lorem ipsum",
+        title: "Review 1",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
+          "Authentic Japanese food lovely place its been 3rd time I’m ordering 💕",
+      },
+      {
+        title: "Review 2",
+        description: "Delicious food with super quality ..and quick service",
+      },
+      {
+        title: "Review 3",
+        description: "Good food loved the taste..",
+      },
+      {
+        title: "Review 4",
+        description: "Delicious 🥰 loved the food 😋",
+      },
+      {
+        title: "Review 5",
+        description:
+          "fast delivery and amazing quality ! The sushi was fresh, flavours was spot on, and everything was packed neatly. highly recommend.💕",
+      },
+      {
+        title: "Review 6",
+        description:
+          "Fresh, Fast and Flavourful sushi great quality of food 💕💕",
       },
     ],
   },
