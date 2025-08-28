@@ -15,16 +15,16 @@ const Adds: React.FC<AddsTypes> = ({ title, description, links }) => {
         className=" box-shadow_2 rounded-tr-[40px] relative after:absolute after:inset-0 after:bg-white after:z-[-2]"
       >
         <div className="w-full bg_img py-[4.5rem]">
-          <Container>
+          <Container className="max-md:relative max-md:after:absolute after:left-4 after:top-[6.8rem] after:w-[calc(100%-2.5rem)] after:h-px after:bg-secondary after:z-[-1]">
             <div className="flex max-md:flex-col max-md:gap-8 md:items-center">
               <div className="w-full flex max-w-lg gap-4">
                 <span className="mt-1">
                   <OutLineCallCircleIcon />
                 </span>
-                <div className="max-w-sm">
+                <div className="max-w-sm ">
                   <Headings
                     level={2}
-                    className="text-secondary md:text-[2rem] font-fr "
+                    className="text-secondary md:text-[2rem] text-2xl font-fr "
                     heading={title}
                   />
                   <Link href={links[0].href}>

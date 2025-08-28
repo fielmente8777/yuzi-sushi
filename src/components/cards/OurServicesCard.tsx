@@ -7,7 +7,7 @@ const OurServicesCard: React.FC<OurServicesPropsType["cards"][0]> = ({
 }) => {
   return (
     <div className="flex flex-col items-center gap-[20px]">
-      <span className="" aria-label={title}>
+      <span className="" ariaLabel={title}>
         {icon}
       </span>
       <div className="">

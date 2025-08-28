@@ -12,9 +12,9 @@ const Footer = () => {
   }
   return (
     <footer className="w-full max_screen_width py-6 md:py-14 footer before:bg-blend-luminosity overflow-hidden">
-      <Container>
+      <Container className="bg3_img">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
-          <div className="">
+          <div className="max-md:pb-16">
             <div className="w-full max-w-[11.5rem] mx-auto aspect-[4/3] relative">
               <Image
                 src={footerData.logo}
@@ -54,6 +54,7 @@ const Footer = () => {
                 Powered by <Link href="https://eazotel.com">EAZOTEL</Link>
               </p>
             </div>
+            
           </div>
           <div className="md:block hidden">
             <Form />
