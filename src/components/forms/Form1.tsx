@@ -137,7 +137,7 @@ const Form1 = () => {
             onChange={(e) => setCountryCode(e.target.value)}
             className="w-auto bg-[#2A61A5] rounded-lg text-white focus:outline-white py-3 px-px"
             style={{ inlineSize: `${countryCode.length + 2}ch` }}
-            ariaLabel="Country Code"
+            aria-label="Country Code"
           >
             {countries.map((country, index) => (
               <option

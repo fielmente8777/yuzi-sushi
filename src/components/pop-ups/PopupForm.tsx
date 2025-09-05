@@ -68,7 +68,7 @@ const PopupForm = () => {
             <button
               onClick={closeModal}
               className="absolute top-6 right-4 w-8 h-8 flex justify-center items-center text-lg rounded-full text-white bg-secondary z-10 transition-all duration-300"
-              ariaLabel="Close popup"
+              aria-label="Close popup"
             >
               <AiOutlineClose />
             </button>
